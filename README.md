@@ -24,9 +24,9 @@ A summary of the steps to run the sample follow:
 
    ZN "mynamespace"
 
-5. Enter the following commands (replacing with the full path of the buildsample/buildsamplerest.rtn file):
+5. Enter the following commands (replacing with the full path of the buildsample/buildsamplerest.mac file):
 
-    do $system.OBJ.Load("full-path-to-buildsamplerest.rtn","ck")
+    do $system.OBJ.Load("full-path-to-buildsamplerest.mac","ck")
 
     do ^buildsamplerest
 
