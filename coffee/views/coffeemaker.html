@@ -1,0 +1,19 @@
+<div class="coffeemaker">
+  <div class="container">
+  	<div class="card">
+  		<img class="img" ng-src="{{ detail.img || 'img/test-greenphone.png' }}">
+  		<p class="price price2">{{ detail.price | currency }}</p>
+  	</div>
+	<h1>{{ detail.name }}</h1>
+	<h3>{{ detail.brand }}</h3>
+	<br/>
+	<h2>Specifications</h2>
+	<table>
+		<tr ng-repeat="spec in specs">
+			<th>{{spec}}</th>
+			<td>{{ detail[spec] }}</td>
+		</tr>
+	</table>
+	<p><a href="#/">go back</a> | <a href="#/coffeemakeredit/{{ detail.coffeemakerID }}">edit</a></p>
+  </div>
+</div>

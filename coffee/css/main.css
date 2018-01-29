@@ -1,0 +1,111 @@
+html, body {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: Arial, serif;
+   background-image: url("../img/background.jpg");
+}
+
+.container {
+   margin-bottom: 3px;
+}
+
+.header h1 {
+   color: #2A2B95;
+   font-size: 50px;
+   font-weight: bold;
+}
+
+.card {
+   overflow: hidden;
+   position: relative;
+   width: 13%;
+   display: inline-block;
+   margin: 10px 20px;
+   position: relative;
+}
+
+.model {
+   color: #000;
+   font-size: 15px;
+   font-weight: bold;
+   margin-bottom: 5px;
+}
+
+.manufacturer {
+   color: #afafaf ;
+   font-size: 14px;
+}
+
+.specs {
+   color: #afafaf ;
+   font-size: 18px;
+}
+
+.price {
+ background-color: #48AFAB ;
+ color: #fff;
+ font-size: 18px;
+   border-radius: 50%;
+   box-shadow: 5px 6px 15px rgba(0,0,0,0.2);
+   font-weight: 200;
+   height: 70px;
+   line-height: 70px;
+   text-align: center;
+   width: 70px;
+   opacity: 0.9;
+ position: absolute;
+ top: 2px;
+ right: 2px;
+}
+
+.price2 {
+ background-color: #48AFAB;
+}
+
+
+.btn {
+   background: transparent;
+   color: #000;
+   border: 1px solid #000;
+   font-size: 14px;
+   font-weight: 200;
+   padding:2px 10px;
+   border-radius: 2px;
+}
+
+.btn:hover {
+   color: rgb(255,80,80);
+   background: rgba(255,80,80,0.25);
+   transition: background 500ms;
+   border: 1px solid rgb(255,80,80);
+}
+
+.btn-bought {
+ background-color: #ababab ;
+ color: #3f3f3f ;
+}
+
+label {
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+}​
+
+input[type="text"] {
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+input[type="text"]:focus,
+input[type="text"].focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+input[readonly]
+{
+  background-color:lightgrey;
+}

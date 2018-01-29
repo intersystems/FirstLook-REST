@@ -1,0 +1,16 @@
+	<div class="main">
+	
+	  <div class="container">
+	    <span>Search: <input ng-model="query"></span>
+		<span><a href="#/newcoffeemaker">Create new coffeemaker</a></span>
+	  </div>
+	  
+	  <div class="container">
+        <div class="card" ng-repeat="coffeemaker in coffeemakerlist | filter: query">
+          <a href="#/coffeemaker/{{ coffeemaker.coffeemakerID }}">
+          	<coffeemaker-info info="coffeemaker"></coffeemaker-info>
+          </a>
+        </div>
+      </div>
+	  
+	</div>

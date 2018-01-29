@@ -1,0 +1,58 @@
+ROUTINE buildsamplerest
+ // This is from https://github.com/intersystems/Samples-REST
+ // Use or operation of this code is subject to acceptance of the license available in the code repository for this code.
+
+    write !, "This is the setup routine for the Samples-REST sample, which provides "
+    write !, "a REST service for use with InterSystems IRIS Data Platform."
+    write !
+
+    write !, "Please specify the full path of the directory that contains this sample."
+    write !, "(This is the directory that contains the README.md and LICENSE files.)", !
+    read stagingroot
+    set OK=$$run(stagingroot,1)
+ 
+    if OK {
+        write !!, "See the README.md file for details on this sample "
+        write !, "and links to related documentation."
+    }
+
+run(stagingroot, interactive) public {
+    if '$DATA(interactive) {
+        set interactive=0
+    }
+
+    if $ZSTRIP(stagingroot,"<>W")="" {
+        if interactive {
+            write !, "Not a valid directory... Quitting."
+        }
+        return 0
+    }
+
+    //load and compile classes ***************************
+    if interactive {
+        write !!, "Loading and compiling classes..."
+    }
+    set dir=stagingroot_"/cls/"
+    if '##class(%File).DirectoryExists(dir) {
+        if interactive {
+            write !!, "Looking for "_dir
+            write !, "but it does not exist... Quitting."
+        }
+        return 0
+    }
+    do $system.OBJ.LoadDir(dir,"ck",,1)
+
+    set file=stagingroot_"/gbl/coffeemakers.xml"
+    if '##class(%File).Exists(file) {
+        if interactive {
+            write !!, "Looking for "_file
+            write !, "but it does not exist... Quitting."
+        }
+        return 0
+    }
+    do $system.OBJ.Load(file)
+    return 1
+ 
+} 
+
+ 

@@ -1,0 +1,43 @@
+<div class="coffeemaker">
+  <div class="container">
+  <form>
+  <fieldset>
+   <legend ng-bind="legendString"></legend>
+    <div class="block">
+	<label for="name">Name:</label>
+    <input type="text" ng-model="coffeemakeredit.name"> *
+	</div>
+	<div class="block">
+	<label for="brand">Brand:</label>
+	<input type="text" ng-model="coffeemakeredit.brand"> *
+	</div>
+	<div class="block">
+    <label for="img">Image-File:</label>
+	<input type="text" ng-model="coffeemakeredit.img">
+	</div>
+	<div class="block">
+	<label for="color">Color:</label>
+	<input type="text" ng-model="coffeemakeredit.color">
+	</div>
+	<div class="block">
+	<label for="numcups">Number of Cups:</label>
+	<input type="text" size=50 ng-model="coffeemakeredit.numcups">
+	<div class="block">
+	<label for="price">Price:</label>
+	<input type="text" ng-model="coffeemakeredit.price">
+	</div>
+
+	</div>
+	<p></p>
+	<div class="block">
+	<label for="save"></label>
+	<button class="btn btn-active" ng-click="saveCoffeemaker()"> Save </button>
+	<button class="btn btn-active" ng-click="deleteCoffeemaker()"> Delete </button>
+	</div>
+	</fieldset>
+	</form>
+	<!-- with the target attribute set it will trigger a reload -->
+	<!-- this could also be done with $route.reload() in the $routeUpdate event handler or called by ng-click -->
+	<p><a href="index.html" target="_self">go back</a></p>
+  </div>
+</div>
