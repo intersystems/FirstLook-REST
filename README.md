@@ -24,13 +24,13 @@ A summary of the steps to run the sample follow:
 
    ZN "mynamespace"
 
-5. Enter the following commands (replacing with the full path of the buildsample/buildsamplerest.rtn file):
+5. Enter the following commands (replacing with the full path of the buildsample/Build.RESTSample.cls file):
 
-    do $system.OBJ.Load("full-path-to-buildsamplerest.rtn","ck")
+    do $system.OBJ.Load("full-path-to-Build.RESTSample.cls","ck")
 
-    do ^buildsamplerest
+    do ##class(Build.RESTSample).Build
 
-6. Then answer any prompts.
+6. When prompted, enter the the full path of the directory to which you downloaded this sample. 
 
 7. Copy the coffee directory of the repository to install-dir/CSP.
 
