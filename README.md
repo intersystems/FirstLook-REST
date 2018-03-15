@@ -28,13 +28,13 @@ A summary of the steps to run the sample follow:
 
     do $system.OBJ.Load("full-path-to-Build.RESTSample.cls","ck")
 
-    do ##class(Build.RESTSample).Build
+    do ##class(Build.RESTSample).Build()
 
-6. When prompted, enter the the full path of the directory to which you downloaded this sample. 
+6. When prompted, enter the the full path of the directory to which you downloaded this sample. The method then loads and compiles the code and performs other needed setup steps.
 
 7. Copy the coffee directory of the repository to install-dir/CSP.
 
-8. In the Management Portal create a web application named /coffee
+8. In the Management Portal, create a web application named /coffee
    
    This will use the install-dir/CSP/coffee directory.
 
