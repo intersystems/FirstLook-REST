@@ -40,6 +40,6 @@ A summary of the steps to run the sample follow:
 
 9. Create another web application, this one named /rest/coffeemakerapp. See <a href="http://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=AFL_REST">First Look: Developing REST Interfaces in InterSystems IRIS</a> for details.
 
-10. In the Management Portal, ensure you ware in a production-enabled namespace you are using for this sample and select Interoperability > List > Productions and then open demo.CoffeeMakerProduction and start it.
+10. In the Management Portal, ensure you are in a production-enabled namespace you are using for this sample and select Interoperability > List > Productions and then open demo.CoffeeMakerProduction and start it.
 
 11. Use a REST tool, such as Postman, to enter the REST calls.
