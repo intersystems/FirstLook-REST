@@ -14,6 +14,10 @@ Use or operation of this code is subject to acceptance of the license available 
 <Default>1</Default>
 </Parameter>
 
+<Parameter name="CONTENTTYPE">
+<Default>application/json</Default>
+</Parameter>
+
 <XData name="UrlMap">
 <XMLNamespace>http://www.intersystems.com/urlmap</XMLNamespace>
 <Data><![CDATA[
