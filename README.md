@@ -3,7 +3,7 @@ This is the README file for FirstLook-REST. The end of the file has setup instru
 
 Use or operation of this code is subject to acceptance of the license available in the code repository for this code.
 
-FirstLook-REST is meant for use with the InterSystems IRIS Data Platform.  This code sample is intended to be used with "<a href="http://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=AFL_REST">First Look: Developing REST Interfaces in InterSystems IRIS</a>".
+FirstLook-REST is meant for use with the InterSystems IRIS Data Platform.  This code sample is intended to be used with https://learning.intersystems.com/course/view.php?name=DevelopingRESTInterfaces.
 
 The sample shows you how to develop REST interfaces in InterSystems IRIS to access databases and productions. You can use these REST interfaces with UI tools, such as Angular, to provide a user interface to databases and interoperability productions. You can also use them to enable external systems to access InterSystems IRIS applications.
 
@@ -12,7 +12,7 @@ The sample defines a database of coffee makers and provides REST interfaces to a
 *******************************************************************************
 Setup instructions
 *******************************************************************************
-Detailed instructions to use this sample code are provided in <a href="http://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=AFL_REST">First Look: Developing REST Interfaces in InterSystems IRIS</a>. 
+Detailed instructions to use this sample code are provided in https://learning.intersystems.com/course/view.php?name=DevelopingRESTInterfaces. 
 
 A summary of the steps to run the sample follow:
 
